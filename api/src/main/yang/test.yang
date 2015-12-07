@@ -1,0 +1,7 @@
+module test {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:test";
+    prefix "test";
+
+    
+}
