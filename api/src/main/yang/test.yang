@@ -2,6 +2,23 @@ module test {
     yang-version 1;
     namespace "urn:opendaylight:params:xml:ns:yang:test";
     prefix "test";
-
     
+    grouping test {
+
+        leaf height-inches {
+            type uint64;
+            units byte;
+        }
+
+        leaf width-inches {
+            type uint64;
+            units byte;
+        }
+    }
+
+    container tests {
+        list test {
+            uses test;
+        }
+    }
 }
