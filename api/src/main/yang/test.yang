@@ -21,4 +21,11 @@ module test {
             uses test;
         }
     }
+    rpc changing{
+	input{				
+	    leaf heighttochange {
+		type uint64;
+	    }
+	}
+   }
 }

@@ -15,7 +15,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
   <repository>mvn:org.opendaylight.mdsal.model/features-mdsal-model/${mdsal.model.version}/xml/features</repository>
   <repository>mvn:org.opendaylight.netconf/features-restconf/${restconf.version}/xml/features</repository>
   <repository>mvn:org.opendaylight.dlux/features-dlux/${dlux.version}/xml/features</repository>
-  <repository>mvn:org.opendaylight.ovsdb/southbound-features/{{VERSION}}/xml/features</repository>
+  <repository>mvn:org.opendaylight.ovsdb/southbound-features/${ovsdb.version}/xml/features</repository>
   <feature name='odl-test-api' version='${project.version}' description='OpenDaylight :: test :: api'>
     <feature version='${mdsal.model.version}'>odl-mdsal-models</feature>
     <bundle>mvn:org.opendaylight.test/test-api/${project.version}</bundle>
@@ -29,7 +29,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
   <feature name='odl-test-rest' version='${project.version}' description='OpenDaylight :: test :: REST'>
     <feature version="${project.version}">odl-test</feature>
     <feature version="${restconf.version}">odl-restconf</feature>
-    <feature version='${project.version}'>odl-ovsdb-southbound-rest</feature>
+    <feature version="${ovsdb.version}">odl-ovsdb-southbound-impl-rest</feature>
   </feature>
   <feature name='odl-test-ui' version='${project.version}' description='OpenDaylight :: test :: UI'>
     <feature version="${project.version}">odl-test-rest</feature>
